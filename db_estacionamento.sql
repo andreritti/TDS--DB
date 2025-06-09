@@ -1,3 +1,7 @@
+CREATE DATABASE estacionamento;
+
+USE estacionamento;
+
 CREATE TABLE cliente(
     cpf INT NOT NULL PRIMARY KEY,
     nome VARCHAR(60),
@@ -51,7 +55,7 @@ INSERT INTO modelo (codMod, desc_2) VALUES
 (2, 'SUV'),
 (3, 'Sedan');
 
--- Veículos (com ano)
+-- Veículos
 INSERT INTO veiculo (placa, Modelo_codMod, Cliente_cpf, cor, ano) VALUES
 ('JJJ-2020', 1, 111111111, 'verde', 2005),
 ('JEG-1010', 2, 222222222, 'preto', 1999),
